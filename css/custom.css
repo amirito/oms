@@ -20,6 +20,16 @@ nav.navbar-default{
 nav .container-fluid{
 
 }
+a{
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+a:hover{
+    text-decoration: none;
+}
 .logo{
     padding: 30px 50px;
     border-radius: 50%;
@@ -63,8 +73,8 @@ nav .container-fluid{
 }
 .nav div li:hover{
     text-decoration: none;
-    border: dashed 1px #ffffff;
-    box-shadow: inset 0 0 3px #ffffff;
+    background-color: darkred;
+    box-shadow: inset 0 0 5px #333;
 }
 
 .main{
@@ -91,4 +101,64 @@ nav .container-fluid{
     background-size: 100px 100px;
     box-shadow: 0 0 5px #000;
 
+}
+footer{
+    box-shadow: inset 0 0 3px #333;
+    text-align: center;
+    background-color: #ffffff !important;
+    min-height: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.social-network li{
+    display: inline-block;
+}
+.social{
+    width: 32px;
+    height: 32px;
+    display: block;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.social-s{
+    width: 72px;
+    height: 72px;
+    display: block;
+    position: absolute;
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.facebook{
+    background-image: url("../images/social/facebook.png");
+}
+.facebook:hover{
+    background-image: url("../images/social/facebook-h.png");
+}
+.twitter{
+    background-image: url("../images/social/twitter.png");
+}
+.twitter:hover{
+    background-image: url("../images/social/twitter-h.png");
+}
+.instagram{
+    background-image: url("../images/social/instagram.png");
+}
+.instagram:hover{
+    background-image: url("../images/social/instagram-h.png");
+}
+.google-plus{
+    background-image: url("../images/social/google-plus.png");
+}
+.google-plus:hover{
+    background-image: url("../images/social/google-plus-h.png");
+}
+.footer-bottom{
+    text-align: center;
 }
