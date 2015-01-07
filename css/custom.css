@@ -7,7 +7,7 @@
 }
 body{
     font-family: koodak, tahoma;
-    background-image: url("../images/noise.png");
+    background-image: url("../images/bg.png");
     font-size: 18px;
 }
 header{
@@ -26,9 +26,11 @@ a{
     -ms-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
+    color: #080808;
 }
 a:hover{
     text-decoration: none;
+    color: red;
 }
 .logo{
     padding: 30px 50px;
@@ -107,6 +109,10 @@ a:hover{
 }
 .top-container{
     padding-top: 50px;
+    background-color: #fff;
+    min-height: 350px;
+    box-shadow:inset 0 0 5px #333;
+    border-radius: 10px 10px 0 0;
 }
 .top-container h3 , .bottom-container h3{
     color: #ffffff;
@@ -115,28 +121,40 @@ a:hover{
 }
 .top-container p , .bottom-container p{
     margin: 60px 0 20px 0;
+    font-size: 20px;
+}
+.top-container div{
+    padding-bottom: 100px;
 }
 .product-label{
-    width: 350px;
-    height: 250px;
-    position: absolute;
-    right: -5px;
-    top: -15px;
-    z-index: -1;
-}
 
+}
+.product{
+
+    background-image: url("../images/bg.png");
+    box-shadow: 0 0 5px #333;
+    margin-bottom: 20px;
+}
 .bottom-container{
     padding-top: 50px;
-    height: 400px;
+    padding-bottom: 50px;
+    min-height: 600px;
+    background-color: #fff;
+    box-shadow:inset 0 0 5px #333;
+    border-radius: 0 0 10px 10px;
 }
 
 footer{
-    box-shadow: inset 0 0 3px #333;
+    box-shadow: inset 0 0 5px #333;
     text-align: center;
     background-color: #ffffff !important;
     min-height: 300px;
     padding: 10px;
     margin-bottom: 10px;
+
+}
+footer hr{
+    border-top: solid 0.5px red;
 }
 .social-network li{
     display: inline-block;
@@ -189,4 +207,7 @@ footer{
 }
 .footer-bottom{
     text-align: center;
+}
+.rayweb{
+    color: #438838;
 }
