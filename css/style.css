@@ -1,0 +1,118 @@
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Raleway-Medium.eot?#iefix&v=4.1.0") format("embedded-opentype"), url("../fonts/Raleway-Medium.woff?v=4.1.0") format("woff"), url("../fonts/Raleway-Medium.ttf?v=4.1.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg");
+}
+@font-face {
+    font-family: "koodak";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/BKoodakBold.eot?#iefix&v=4.1.0") format("embedded-opentype"), url("../fonts/BKoodakBold.woff?v=4.1.0") format("woff"), url("../fonts/BKoodakBold.ttf?v=4.1.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg");
+}
+@font-face {
+    font-family: "broadway";
+    font-style: normal;
+    font-weight: normal;
+    src: url("broaBdway.eot?#iefix&v=4.1.0") format("embedded-opentype"), url("broadway.woff?v=4.1.0") format("woff"), url("broadway.ttf?v=4.1.0") format("truetype"), url("broadway.svg?v=4.1.0#fontawesomeregular") format("svg");
+}
+@font-face {
+    font-family: "elham";
+    font-style: normal;
+    font-weight: normal;
+    src: url("BElham.eot?#iefix&v=4.1.0") format("embedded-opentype"), url("BElham.woff?v=4.1.0") format("woff"), url("BElham.ttf?v=4.1.0") format("truetype"), url("BElham.svg?v=4.1.0#fontawesomeregular") format("svg");
+}
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+
+
+/**** Isotope styles ****/
+
+/* required for containers to inherit vertical size from window */
+html,
+body {
+  height: 100%;
+}
+.logo {
+	background-image:url(../images/logo.png) !important;
+	background-size:190px;
+	background-repeat:no-repeat;
+	margin-top:25px !important;
+	height:70px !important;
+	
+	}
+.footer-link li{
+	list-style:none;
+	text-align:center;
+	line-height:30px !important;
+	}
+.footer-link li a{
+	text-decoration:none;
+	color:#ccc;
+	}
+
+
+
