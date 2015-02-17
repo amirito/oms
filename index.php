@@ -18,9 +18,7 @@
 <link rel='stylesheet' id='js_composer_front-css'  href='css/js_composer.css' type='text/css' media='all' />
 <link rel='stylesheet' id='js_composer_custom_css-css'  href='css/custom.css?ver=4.3.4' type='text/css' media='screen' />
 
-<!-- book style -->
-<link rel="stylesheet" type="text/css" href="css/book/style.css">
-<!-- /book style -->
+
 
 <script type='text/javascript' src='js/modernizr.custom.48287.js'></script>
 <script type='text/javascript' src='js/jquery.js'></script>
@@ -196,12 +194,5 @@ var plethora_slider = {"slider_options":{"slideshow":"1","direction":"horizontal
 </script>
 <script type='text/javascript' src='js/cleanstart_fmslider.js'></script>
 
-<!-- book jquery -->
-<script src="js/book/jquery.address-1.6.min.js"></script>
-<script src="js/book/jquery.fullscreen.js"></script>
-<script src="js/book/onload.js"></script>
-<script src="js/book/turn.js"></script>
-<script src="js/book/wait.js"></script>
-<!-- /book jquery -->
 </body>
 </html>

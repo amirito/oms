@@ -1,3 +1,24 @@
+<div class="full_page_photo" style="background-image: url(images/banner1.jpg)">
+     <div class="hgroup">
+      <div class="hgroup_title animated bounceInUp">
+   <div class="container">
+     <h1 dir="rtl" style="font-family:koodak,broadway">محصولات <strong><span class="rotate">ما, O.M.S</span></strong></h1>
+   </div>
+</div>
+<div class="hgroup_subtitle animated bounceInUp skincolored">
+   <div class="container">
+     <p>Small business with a <strong>character</strong> and a style unique enough to impress!</p>
+   </div>
+</div>
+     </div>
+</div>
+	<div class="main">
+<div class="container triangles-of-section">
+  <div class="triangle-up-left"></div>
+  <div class="square-left"></div>
+  <div class="triangle-up-right"></div>
+  <div class="square-right"></div>
+</div>
 <!-- DIV YOUR WEBSITE --> 
 <div style="width:100%;margin:0 auto; margin-top:100px;">
     
@@ -618,26 +639,6 @@
    <!-- END HTML BOOK -->
 
 
-    <!-- CONFIGURATION FLIPBOOK -->
-    <script>    
-    jQuery('#fb5').data('config',
-    {
-    "page_width":"550",
-    "page_height":"715",
-	"email_form":"office@somedomain.com",
-    "zoom_double_click":"1",
-    "zoom_step":"0.06",
-    "double_click_enabled":"true",
-    "tooltip_visible":"true",
-    "toolbar_visible":"true",
-    "gotopage_width":"30",
-    "deeplinking_enabled":"true",
-    "rtl":"false",
-    'full_area':'false',
-	'lazy_loading_thumbs':'false',
-	'lazy_loading_pages':'false'
-    })
-    </script>
 
 
 </div>
