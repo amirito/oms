@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title> OMS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<link rel="shortcut icon" href="images/icons/favicon.png">
+<link rel="shortcut icon" href="images/icons/favicon.ico">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <meta name='robots' content='index,follow' />
 <link rel='stylesheet' id='style-less-css'  href='css/style-3b53c74f60.css' type='text/css' media='all' />
@@ -37,38 +37,41 @@
             		</a>
 				</div>
                 <div id="mainmenu" class="menu_container">
-                    <label class="mobile_collapser">MENU</label> <!-- Mobile menu title -->
+                    <label class="mobile_collapser">منو</label> <!-- Mobile menu title -->
                     <ul id="menu-main-menu" class="">
                         <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10 current_page_item menu-item-30 active pull-right">
-                            <a title="HOME" href="?page=home">صفحه اصلی</a>
+                            <a href="?page=home">صفحه اصلی</a>
                         </li>
                         <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29 pull-right">
-                            <a title="ABOUT US" href="#">درباره ما</a>
+                            <a href="#">درباره ما</a>
                         </li>
                         <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27 pull-right">
-                            <a title="PORTFOLIO" href="?page=contact">ارتباط با ما</a>
+                            <a href="?page=contact">ارتباط با ما</a>
                         </li>
                         <li id="menu-item-1635" class="two-column dropleft menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1635 pull-right " dir="rtl">
-                            <a title="Features" href="#">محصولات <span class="caret"></span></a>
+                            <a href="#">محصولات <span class="caret"></span></a>
                                 <ul role="menu" class=" dropdown-menu">
                                     <li id="menu-item-223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223">
-                                        <a title="Home Alternative" href="#">دسته دوم</a></li>
+                                        <a href="#">دسته دوم</a></li>
                                     <li id="menu-item-224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-224">
-                                        <a title="Dark Mix" href="?page=products">دسته اول</a></li>
+                                        <a href="?page=products">دسته اول</a></li>
                                     <li id="menu-item-1460" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1460">
-                                        <a title="Photo Gallery" href="#">دسته چهارم</a></li>
+                                        <a href="#">دسته چهارم</a></li>
                                     <li id="menu-item-233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-233">
-                                        <a title="Design Elements" href="#">دسته سوم</a></li>
+                                        <a href="#">دسته سوم</a></li>
                                     <li id="menu-item-1624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1624">
-                                        <a title="Masonry Gallery" href="#">دسته ششم</a></li>
+                                        <a href="#">دسته ششم</a></li>
                                     <li id="menu-item-269" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-269">
-                                        <a title="Error 404" href="#">دسته پنجم</a></li>
+                                        <a href="#">دسته پنجم</a></li>
                                     <li id="menu-item-1652" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1652">
-                                        <a title="Documentation" target="_blank" href="#">دسته هشتم</a></li>
+                                        <a target="_blank" href="#">دسته هشتم</a></li>
                                     <li id="menu-item-1653" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1653">
-                                        <a title="Support" target="_blank" href="#">دسته هفتم</a></li>
+                                        <a target="_blank" href="#">دسته هفتم</a></li>
                                 </ul>
                          </li>
+                         			<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27 pull-right">
+                           				 <a href="?page=contact">نمایشگاه ها</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="triangle-up-left"></div>
@@ -98,7 +101,7 @@
 			<div class="row">
             <div id="flickr-widget-4" class="widget flickr col-sm-4 col-md-4 text-right">
                 	<div class="pl_latest_news_widget">
-               			<h3>درباره ما</h3>
+               			<h3 class="text-center">درباره ما</h3>
                         <hr>
               			<p>
                         مجموعه رای وب از سال 1390 با هدف فعالیت در زمینه نرم افزار پا به عرصه وجود نهاد و به طور تخصصی فعالیت خود را به اینترنت و وب متمرکز ساخت. در این گذار ، چالش عمده ای پیش روی ما بود ، از طرفی می بایست کاری را عرضه می کردیم که در مقایسه با دیگر هم قطاران از سراسر دنیا بر یک محمل قرار گیرد ، همینطور توقعات روزافزون مشتریانمان را بر آورده سازد.
@@ -110,8 +113,14 @@
                			<h3>لینک های مرتبط</h3>
                         <hr>
               			<ul class="footer-link">
+                       		 <li>   
+                            <a href="#">صفحه اصلی</a>                         
+                            </li>
                             <li>   
                             <a href="#">درباره ما</a>                         
+                            </li>
+                            <li> 
+                            <a href="#">ارتباط با ما</a>
                             </li>
                             <li> 
                             <a href="#">محصولات</a>
@@ -119,30 +128,20 @@
                             <li> 
                             <a href="#">نمایشگاه ها</a>
                             </li>
-                            <li> 
-                            <a href="#">ارتباط با ما</a>
-                            </li>
 
          				</ul>
                		</div>
                	</div>
 				<div id="aboutus-widget-4" class="widget aboutus col-sm-4 col-md-4 text-right">
                 	<div class="pl_about_us_widget ">
-                	<h3>اطلاعات تماس</h3>
+                	<h3 class="text-center">اطلاعات تماس</h3>
                     <hr>
-                	<p>
-                    تهران - خیابان آزادی - خیابان نمایندگی - پلاک 1 - واحد 15
+                	<p align="justify"><i class="fa fa-taxi"></i>
+                  		آدرس دفتر مرکزی : نهران، میدان شوش، خیابان صابونیان، خیابان کاخ جوانان، مجتمع تجاری الغدیر، طبقه سوم، واحد 7
                     </p>
-                	<p><i class="fa fa-phone"></i>66576199 </p>
-                	<p><i class="fa fa-envelope"></i>info@rayweb.ir</p>
-                		<div class="aboutus_social pull-right">
-                			<div class="social_wrapper">
-                                <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
-                                <a href="http://"><i class="fa fa-twitter"></i></a>
-                                <a href="callto:skype"><i class="fa fa-skype"></i></a>
-                                <a href="http://youtube.com"><i class="fa fa-youtube"></i></a>
-                			</div>
-                		</div>
+                	<p><i class="fa fa-phone"></i>تلقن : 55184468 - 021 </p>
+                	<p><i class="fa fa-fax"></i>فکس : 55188148 - 021</p>
+                		
                 	</div>
                 </div>
                 
@@ -152,13 +151,20 @@
        		</div>
 	
 	</section>
+    <div class="container text-center">
+    <div class="aboutus_social text-center">
+                			<div class="social_wrapper">
+                                <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+                                <a href="http://"><i class="fa fa-twitter"></i></a>
+                                <a href="callto:skype"><i class="fa fa-skype"></i></a>
+                                <a href="http://youtube.com"><i class="fa fa-youtube"></i></a>
+                			</div>
+                		</div>
+     </div>                   
 	<div class="copyright">
    		<div class="container">
-     		<div class="row">
-        		<div class="col-sm-4 col-md-4 infobar_copyright">Copyright ©2014 all rights reserved</div>
-                <div class="col-sm-4 col-md-4"></div>
-                <div class="text-right col-sm-4 col-md-4 infobar_credits">Designed by <a href="http://rayweb.ir">Rayweb</a></div>
-      		</div>
+     		<p align="center">تمامی حقوق مادی و معنوی وب سایت محفوظ می باشد.</p>
+            <p align="center">طراح : <a href="http://rayweb.ir">رای وب</a></p>
  		</div>
 	</div>
 </footer>

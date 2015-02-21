@@ -6944,6 +6944,14 @@ section.following_dark {
 .main .skincolored_section .section_header.fancy small:before {
   background-color: #fff;
 }
+.main .para{
+  background-image:url(../images/para.jpg);
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  color: #fff !important;
+  margin-top: 75px;
+  padding-bottom: 75px;
+	}
 .main .dark_section {
   background-color: #222222;
   color: #fff !important;
@@ -8658,12 +8666,12 @@ footer .widget p {
   padding: 0 15px 10px 0;
   display: inline-block;
 }
-.pl_about_us_widget .aboutus_social {
+.aboutus_social {
   clear: both;
-  text-align: left;
+  
   padding: 15px 0;
 }
-.pl_about_us_widget .aboutus_social a {
+.aboutus_social a {
   text-align: center;
   display: inline-block;
   margin: 0 8px 8px 0;
@@ -8676,19 +8684,19 @@ footer .widget p {
   line-height: 48px;
   color: #fff;
 }
-.pl_about_us_widget .aboutus_social a:link,
-.pl_about_us_widget .aboutus_social a:visited {
+.aboutus_social a:link,
+.aboutus_social a:visited {
   color: #fff;
 }
-.pl_about_us_widget .aboutus_social a i {
+.aboutus_social a i {
   -webkit-transition: all 100ms ease;
   transition: all 100ms ease;
   margin: 0px !important;
   padding: 0px !important;
   border: none !important;
 }
-.pl_about_us_widget .aboutus_social a:hover,
-.pl_about_us_widget .aboutus_social a:active {
+.aboutus_social a:hover,
+.aboutus_social a:active {
   background-color: #fff;
   color: #dd1a21;
 }

@@ -25,6 +25,10 @@
     font-weight: normal;
     src: url("BElham.eot?#iefix&v=4.1.0") format("embedded-opentype"), url("BElham.woff?v=4.1.0") format("woff"), url("BElham.ttf?v=4.1.0") format("truetype"), url("BElham.svg?v=4.1.0#fontawesomeregular") format("svg");
 }
+body{
+	direction:rtl;
+	font-size:15px;
+	}
 
 .isotope-item {
   z-index: 2;
@@ -113,6 +117,9 @@ body {
 	text-decoration:none;
 	color:#ccc;
 	}
-
+.exhibition{
+	background-image:url(../images/banner3.jpg);
+	background-attachment:fixed;
+	}
 
 
