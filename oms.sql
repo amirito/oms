@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 23, 2015 at 02:23 PM
+-- Generation Time: Feb 23, 2015 at 07:04 AM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.12
 
@@ -67,8 +67,8 @@ CREATE TABLE IF NOT EXISTS `products` (
 
 INSERT INTO `products` (`id`, `product_name_id`, `product_code`, `product_size`, `product_description`, `product_count`, `product_handle`, `product_colors`, `product_image`) VALUES
 (1, 1, '1008', '10-15-18', '8 لیوان', '', 'قرمز', '', '577.jpg'),
-(2, 2, '1008', '10-15-18', '8 لیوان', '', 'قرمز', '#dc0b0b-#8b008b-#ffb6c1-', '2014-09-16-22.24.55.jpg'),
-(3, 2, '1008', '10-15-18', '8 لیوان', '', 'قرمز', '#dc0b0b-#8b008b-#ffb6c1-', '1424260973.jpg'),
+(2, 2, '1008', '10-15-18', '8 لیوان', '', 'قرمز', '#dc0b0b-#8b008b-#ffb6c1-', '2014-09-16 22.24.55.jpg'),
+(3, 2, '1008', '10-15-18', '8 لیوان', '', 'قرمز', '#dc0b0b-#8b008b-#ffb6c1-', '1424260973'),
 (4, 2, '1008', '10-15-18', '8 لیوان', '', 'قرمز', '#dc0b0b-#8b008b-#ffb6c1-', '1424261001.jpg');
 
 -- --------------------------------------------------------
