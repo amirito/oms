@@ -121,5 +121,8 @@ body {
 	background-image:url(../images/banner3.jpg);
 	background-attachment:fixed;
 	}
+.broadway{
+	font-family:broadway !important;
+	}
 
 
