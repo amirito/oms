@@ -1,3 +1,6 @@
+<?php require_once('admin/core/core.php'); ?>
+
+
 <!doctype html>
 <html class="no-js" lang="en-US">
 <head>
@@ -52,25 +55,14 @@
                             <a href="#">محصولات <span class="caret"></span></a>
                                 <ul role="menu" class=" dropdown-menu">
                                     <li id="menu-item-223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223">
-                                        <a href="#">دسته دوم</a></li>
+                                        <a href="?page=products&catid=1">استیل</a></li>
                                     <li id="menu-item-224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-224">
-                                        <a href="?page=products">دسته اول</a></li>
-                                    <li id="menu-item-1460" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1460">
-                                        <a href="#">دسته چهارم</a></li>
-                                    <li id="menu-item-233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-233">
-                                        <a href="#">دسته سوم</a></li>
-                                    <li id="menu-item-1624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1624">
-                                        <a href="#">دسته ششم</a></li>
-                                    <li id="menu-item-269" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-269">
-                                        <a href="#">دسته پنجم</a></li>
-                                    <li id="menu-item-1652" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1652">
-                                        <a target="_blank" href="#">دسته هشتم</a></li>
-                                    <li id="menu-item-1653" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1653">
-                                        <a target="_blank" href="#">دسته هفتم</a></li>
+                                        <a href="?page=products&catid=2">سرامیک</a></li>
+                                    
                                 </ul>
                          </li>
-                         			<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27 pull-right">
-                           				 <a href="?page=contact">نمایشگاه ها</a>
+                         <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27 pull-right">
+                           		<a href="?page=contact">نمایشگاه ها</a>
                         </li>
                     </ul>
                 </div>
