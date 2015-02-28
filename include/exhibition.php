@@ -107,24 +107,6 @@
             </div>
         </div>
 	</section>
-    <!--<section class="dark_section parallax" style="background-image:url(http://plethorathemes.com/dev/cleanstart/wp-content/uploads/newsletter-cropped-overlay.jpg); background-size:cover;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12  text-default" >
-                    <div class="newsletter_form">
-                        <h3>NEVER MISS A <strong>SINGLE</strong> FEATURE</h3>
-                        <h4>subscribe to our awesome newsletter</h4>
-                        <form class="form-inline" id="newsletter" action="http://plethorathemes.com/dev/cleanstart/wp-admin/admin-ajax.php" method="POST">
-                            <input class="form-control" placeholder="Give Us your e-mail..." name="email" id="email" type="text">
-                            <button class="btn btn-primary newsletter_form_button" type="submit">Go AHEAD!</button>
-                            <span id="newsletterResponse" class="btn btn-primary hidden">MESSAGE</span>
-                            <input type="hidden" name="nonce" id="nonce" value="9b0f6c324f">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-				 	
+
 									
 									

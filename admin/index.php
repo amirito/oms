@@ -89,21 +89,13 @@
 			val = $("#category").val();
     $.post("include/ajax.php",{category : val},
     function(data, status){
-		$('#product_name').removeAttr('disabled');
-		$('#product_name').html(data);
+		$('#product_sub_cat').removeAttr('disabled');
+		$('#product_sub_cat').html(data);
     });
 });
+
+
 		
-		$("#category").change(function(){
-			
-		if($('#category').val() == 1){
-			$('#product_count').removeAttr('disabled');
-			$('#color').css('display','none');
-			}else{
-				$('#product_count').attr('disabled','disabled')
-				$('#color').css('display','block');
-				}
-		})
 </script>
   </body>
 </html>

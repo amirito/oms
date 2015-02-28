@@ -46,7 +46,7 @@
                             <a href="?page=home">صفحه اصلی</a>
                         </li>
                         <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29 pull-right">
-                            <a href="#">درباره ما</a>
+                            <a href="?page=about">درباره ما</a>
                         </li>
                         <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27 pull-right">
                             <a href="?page=contact">ارتباط با ما</a>
@@ -95,8 +95,10 @@
                 	<div class="pl_latest_news_widget">
                			<h3 class="text-center">درباره ما</h3>
                         <hr>
-              			<p>
-                        مجموعه رای وب از سال 1390 با هدف فعالیت در زمینه نرم افزار پا به عرصه وجود نهاد و به طور تخصصی فعالیت خود را به اینترنت و وب متمرکز ساخت. در این گذار ، چالش عمده ای پیش روی ما بود ، از طرفی می بایست کاری را عرضه می کردیم که در مقایسه با دیگر هم قطاران از سراسر دنیا بر یک محمل قرار گیرد ، همینطور توقعات روزافزون مشتریانمان را بر آورده سازد.
+              			<p dir="rtl" align="justify">
+                        شرکت  <span class="broadway red">.O.M.S</span> در سال 1976 میلادی در زمینه تولید محصولات استیل آشپزخانه با ظرفیت تولید سالانه 000/850/1 محصول فعالیت خود را آغاز نمود.
+ محصولات <span class="broadway red">.O.M.S</span> با هدف ثبات در کیفیت بالا هم اکنون از بخش فروش ترکیه فراتر رفته و به بسیاری از کشور های جهان صادر میگردد. 
+
                         </p>
                		</div>
                 </div>
@@ -106,16 +108,16 @@
                         <hr>
               			<ul class="footer-link">
                        		 <li>   
-                            <a href="#">صفحه اصلی</a>                         
+                            <a href="?page=home">صفحه اصلی</a>                         
                             </li>
                             <li>   
-                            <a href="#">درباره ما</a>                         
+                            <a href="?page=about">درباره ما</a>                         
                             </li>
                             <li> 
-                            <a href="#">ارتباط با ما</a>
+                            <a href="?page=contact">ارتباط با ما</a>
                             </li>
                             <li> 
-                            <a href="#">محصولات</a>
+                            <a href="?page=cat_products">محصولات</a>
                             </li>
                             <li> 
                             <a href="#">نمایشگاه ها</a>
@@ -125,7 +127,7 @@
                		</div>
                	</div>
 				<div id="aboutus-widget-4" class="widget aboutus col-sm-4 col-md-4 text-right">
-                	<div class="pl_about_us_widget ">
+                	<div class="pl_about_us_widget " dir="rtl">
                 	<h3 class="text-center">اطلاعات تماس</h3>
                     <hr>
                 	<p align="justify"><i class="fa fa-taxi"></i>
@@ -165,7 +167,7 @@
 
 <script type='text/javascript'>
 /* <![CDATA[ */
-var textRotatorOptions = {"speed":"6000"};
+var textRotatorOptions = {"speed":"2500"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='js/jquery.simple-text-rotator.js'></script>
@@ -179,11 +181,7 @@ var textRotatorOptions = {"speed":"6000"};
 <script type='text/javascript' src='js/collapser.js'></script>
 <script type='text/javascript' src='js/jquery.form.min.js'></script>
 
-<script type='text/javascript'>
-/* <![CDATA[ */
-var _wpcf7 = {"loaderUrl":"http:\/\/plethorathemes.com\/dev\/cleanstart\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ...","cached":"1"};
-/* ]]> */
-</script>
+
 
 <script type='text/javascript'>
 /* <![CDATA[ */

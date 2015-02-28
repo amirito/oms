@@ -1,119 +1,79 @@
-
-
 <?php
-$error='';
-if(isset($_POST['submit'])){
-	### Assigning ####
+
+
+
+	$query = "SELECT * FROM `products` WHERE `id` = '$_GET[id]' ";
+	$result = mysqli_query($connection,$query);
+	$row = mysqli_fetch_assoc($result);
+	var_dump($row);
 	
-	$category = $_POST['category'];
+	if(isset($_POST['edit'])){
 	$product_name = $_POST['product_name'];
 	$product_code = $_POST['product_code'];
 	$product_description = $_POST['product_description'];
 	$product_count = $_POST['product_count'];
 	$product_handle = $_POST['product_handle'];
 	$product_size = $_POST['product_size'];
-	$picture = $_FILES['product_image'];
-	$cat_id = $_POST['category'];
-	$sub_cat_id = $_POST['product_sub_cat'];
-	$product_colors = '';
 	
-	for($i = 1 ; $i < 11 ; $i++){
-		if(isset($_POST[$i])){
-			$product_colors .= $_POST[$i].'-';
+	
+	if($_FILES['product_image']){
+		$picture = $_FILES['product_image'];
+		}else{
+			$picture = $row['product_image'];
 			}
-	}
-	
 	if($picture['error'] == "0"){
 		$picture['name'] = time().'.jpg';
 		$address = "../images/products/$picture[name]";
 		move_uploaded_file($picture['tmp_name'],$address);
 	
-		//$fetch_query = "SELECT * FROM products_name WHERE product_name= '' ";		
+		$edit_query = "UPDATE `products` SET `product_name`='$product_name',`product_code`='$product_code',`product_size`='$product_size',`product_description`='$product_description',`product_count`='$product_count',`product_handle`='$product_handle',`product_image`='$picture[name]' WHERE `id` = '$_GET[id]' " ;
+		$edit_result = mysqli_query($connection,$edit_query);
 		
-
-	
-
-	
-	#######  INSERT INTO DB ########
-	$query = "INSERT INTO `products`(`id`, `product_name`, `product_code`, `product_size`, `product_count` , `product_description`, `product_handle`, `product_colors`, `product_image` , `cat_id` , `sub_cat_id` ) VALUES ('','$product_name','$product_code','$product_size','$product_count','$product_description','$product_handle','$product_colors','$picture[name]','$cat_id',$sub_cat_id)";
-					
-	$result = mysqli_query($connection,$query);
-	
-	if($result){
-		$error = '<div class="alert alert-success alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-  اطلاعات با موفقیت ثبت شد
-</div>';
-		}else{
-			$error = '<div class="alert alert-danger alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-  <strong>اخطار!</strong> خطایی در ثبت اطلاعات رخ داده است
-</div>';
-			}
-	}else {
-	$error = '<div class="alert alert-danger alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-  <strong>اخطار!</strong> خطایی در ثبت اطلاعات رخ داده است
-</div>'; }
-}
+	}
+		}
 ?>
 
 
 <div style="padding-top:50px">
     	<form dir="rtl" method="post" role="form" class="form-horizontal " enctype="multipart/form-data">
-        	<div class="form-group">
-            	<label class="control-label pull-right col-xs-2">انتخاب جنس محصول :</label>
-            	 <div class="col-xs-4 pull-right">   
-             	   <select id="category" name="category" class="form-control">
-              	    <option value="n">جنس محصول را انتخاب کنید</option>
-              	    <option value="1">استیل</option>
-              	    <option value="2">سرامیک</option>
-             	   </select>
-          		  </div>
-            </div>
-            <div class="form-group">
-                <label class="control-label pull-right col-xs-2">انتخاب نوع محصول:</label>
-                 <div class="col-xs-4 pull-right"> 
-                <select id="product_sub_cat" name="product_sub_cat" class="form-control" disabled>
-                </select>
-                 </div>
-            </div>
+        	
+            
             <div class="form-group">
                 <label class="control-label pull-right col-xs-2">نام محصول :</label>
                  <div class="col-xs-4 pull-right"> 
-                <input type="text" id="product_name" name="product_name" class="form-control">
+                <input type="text" id="product_name" name="product_name" class="form-control" value="<?php  echo $row['product_name']; ?>">
                 </select>
                  </div>
             </div>
           	 <div class="form-group">
                 <label class="control-label pull-right col-xs-2">انتخاب کد محصول:</label>
                  <div class="col-xs-4 pull-right">
-                <input type="text" id="product_code" name="product_code" class="form-control">
+                <input type="text" id="product_code" name="product_code" class="form-control" value="<?php  echo $row['product_code']; ?>">
                 </div>   
             </div>
             <div class="form-group">
                 <label class="control-label pull-right col-xs-2">انتخاب شرح محصول:</label>
                 <div class="col-xs-4 pull-right">
-                <input type="text" id="product_description" name="product_description" class="form-control"> 
+                <input type="text" id="product_description" name="product_description" class="form-control" value="<?php  echo $row['product_description']; ?>"> 
                 </div>  
             </div>
             	
             <div class="form-group">
                 <label class="control-label pull-right col-xs-2">تعداد در پالت :</label>
                 <div class="col-xs-4 pull-right">
-                <input type="text" id="product_count" name="product_count" class="form-control">
+                <input type="text" id="product_count" name="product_count" class="form-control" value="<?php  echo $row['product_count']; ?>">
                 </div>   
             </div>
             <div class="form-group">
                 <label class="control-label pull-right col-xs-2">انتخاب طرح دسته:</label>
                 <div class="col-xs-4 pull-right">
-                <input type="text" id="product_handle" name="product_handle" class="form-control"> 
+                <input type="text" id="product_handle" name="product_handle" class="form-control" value="<?php  echo $row['product_handle']; ?>"> 
                 </div>  
             </div>
             <div class="form-group">
                 <label class="control-label pull-right col-xs-2">انتخاب سایز محصول:</label>
                 <div class="col-xs-4 pull-right">
-                <input type="text" id="product_size" name="product_size" class="form-control">   
+                <input type="text" id="product_size" name="product_size" class="form-control" value="<?php  echo $row['product_size']; ?>">   
                 </div>
             </div>
             <div class="form-group">
@@ -138,10 +98,8 @@ if(isset($_POST['submit'])){
             </div>
             
             	<div class="col-sm-2 pull-right">
-            	<input type="submit" value="ثبت محصول" name="submit" class="btn btn-danger">
+                <input type="hidden" name="id" value="<?php  echo $row['id']; ?>" >
+            	<input type="submit" value="ویرایش محصول" name="edit" class="btn btn-danger">
                 </div>
         </form>
 </div>
-        <?php echo $error; ?>
-        
- 

@@ -104,8 +104,8 @@ body {
 	background-image:url(../images/logo.png) !important;
 	background-size:190px;
 	background-repeat:no-repeat;
-	margin-top:25px !important;
-	height:70px !important;
+	margin-top:5px !important;
+	height:80px !important;
 	
 	}
 .footer-link li{
@@ -124,5 +124,32 @@ body {
 .broadway{
 	font-family:broadway !important;
 	}
+.red{
+	color:#DD1A21 !important;
+	}
+.about p{
+	font-size:18px;
+	}
+.feature_teaser ul li{
+	padding:0 !important;
+	list-style-type:none;
+	font-size:20px;
+	}
+.feature_teaser ul{
+	padding:0 !important;
+}
+.feature_teaser ul li i{
+	color:#dd1a21;
+	font-size:18px;
+	
+}
 
+.div-colors {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 10px;
+}
 
