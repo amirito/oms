@@ -55,7 +55,7 @@ mail($to, $subject, $message, $headers);
         <div class="container">
             <div class="row">
                 <div class="col-md-4  text-default" >
-                    <div class="team_member office_address">
+                    <div class="team_member office_address" dir="rtl">
                         <img dir="rtl" src="images/logo.png" width="80%">
                        <hr>
                         <br>

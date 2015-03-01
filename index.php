@@ -130,8 +130,8 @@
                 	<div class="pl_about_us_widget " dir="rtl">
                 	<h3 class="text-center">اطلاعات تماس</h3>
                     <hr>
-                	<p align="justify"><i class="fa fa-taxi"></i>
-                  		آدرس دفتر مرکزی : نهران، میدان شوش، خیابان صابونیان، خیابان کاخ جوانان، مجتمع تجاری الغدیر، طبقه سوم، واحد 7
+                	<p align="justify" dir="rtl"><i class="fa fa-taxi"></i>
+                  		آدرس دفتر مرکزی : تهران، میدان شوش، خیابان صابونیان، خیابان کاخ جوانان، مجتمع تجاری الغدیر، طبقه سوم، واحد 7
                     </p>
                 	<p><i class="fa fa-phone"></i>تلقن : 55184468 - 021 </p>
                 	<p><i class="fa fa-fax"></i>فکس : 55188148 - 021</p>
