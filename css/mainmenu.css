@@ -172,7 +172,7 @@ ul.dropdown-menu > li > .dropdown-menu li > .dropdown-menu > li > .dropdown-menu
 .mobile_collapser {
   display: block;
   height: 51px;
-  text-align: left;
+  text-align: right;
   padding: 12px 25px;
   color: #fff;
   font-size: 16px;
@@ -184,7 +184,7 @@ ul.dropdown-menu > li > .dropdown-menu li > .dropdown-menu > li > .dropdown-menu
 .mobile_collapser:before {
   content: '\2261';
   display: block;
-  float: left;
+  float: right;
   margin: -1px 8px 0 2px;
   font-size: 30px;
 }

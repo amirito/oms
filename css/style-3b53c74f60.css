@@ -8964,7 +8964,7 @@ blockquote p {
   }
   header .logo {
     width: auto;
-    display: inline-block;
+    /* display: inline-block; */
     float: none;
   }
   header .menu_container {
