@@ -1,11 +1,16 @@
 <?php 
+
+	$sub_cat_query = "SELECT DISTINCT (sub_name) , sub_category.id,products.cat_id
+							FROM `products` INNER JOIN  `sub_category` ON products.sub_cat_id = sub_category.id
+							WHERE products.cat_id = $_GET[catid] ";
+	$sub_cat_result = mysqli_query($connection,$sub_cat_query);
+	
 	
 	$product_query = "SELECT products.id AS product_id , products.product_name , products.sub_cat_id , products.product_image , products.cat_id , products.sub_cat_id ,
 						sub_category.id , sub_category.sub_name 
 						FROM `products` INNER JOIN  `sub_category` ON products.sub_cat_id = sub_category.id
 						WHERE products.cat_id = $_GET[catid] ";
-	$product_result = mysqli_query($connection,$product_query);
-	$product_result2 = mysqli_query($connection,$product_query);	
+	$product_result = mysqli_query($connection,$product_query);	
 	if($_GET['catid']==1){
 		$cat = 'استیل';
 		}else {
@@ -42,8 +47,8 @@
      <ul class="portfolio_filters" id="filt_3021" dir="rtl">
           <li><a href="#" data-filter="*">همه محصولات</a></li>
 <?php
-  while($product_row = mysqli_fetch_assoc($product_result2)){
-	  echo '<li><a href="#" data-filter=".sub_cat'.$product_row['id'].'">'.$product_row['sub_name'].'</a></li>';
+  while($sub_cat_row = mysqli_fetch_assoc($sub_cat_result)){
+	  echo '<li><a href="#" data-filter=".sub_cat'.$sub_cat_row['id'].'">'.$sub_cat_row['sub_name'].'</a></li>';
 	  }
  ?>
      </ul>
