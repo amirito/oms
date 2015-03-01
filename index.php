@@ -42,16 +42,16 @@
                 <div id="mainmenu" class="menu_container">
                     <label class="mobile_collapser">منو</label> <!-- Mobile menu title -->
                     <ul id="menu-main-menu" class="">
-                        <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10 current_page_item menu-item-30 active pull-right">
+                        <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10 current_page_item menu-item-30 pull-right <?php if((isset($_GET['page']) && $_GET['page']=='home') || !isset($_GET['page'])) {echo 'active';}?>">
                             <a href="?page=home">صفحه اصلی</a>
                         </li>
-                        <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29 pull-right">
+                        <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29 pull-right <?php if((isset($_GET['page']) && $_GET['page']=='about')) {echo 'active';}?>">
                             <a href="?page=about">درباره ما</a>
                         </li>
-                        <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27 pull-right">
+                        <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27 pull-right <?php if((isset($_GET['page']) && $_GET['page']=='contact')) {echo 'active';}?>">
                             <a href="?page=contact">ارتباط با ما</a>
                         </li>
-                        <li id="menu-item-1635" class="two-column dropleft menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1635 pull-right " dir="rtl">
+                        <li id="menu-item-1635" class="two-column dropleft menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1635 pull-right <?php if((isset($_GET['page']) && $_GET['page']=='products')) {echo 'active';}?>" dir="rtl">
                             <a href="#">محصولات <span class="caret"></span></a>
                                 <ul role="menu" class=" dropdown-menu">
                                     <li id="menu-item-223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223">
@@ -61,7 +61,7 @@
                                     
                                 </ul>
                          </li>
-                         <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27 pull-right">
+                         <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27 pull-right <?php if((isset($_GET['page']) && $_GET['page']=='contact')) {echo 'active';}?>">
                            		<a href="?page=contact">نمایشگاه ها</a>
                         </li>
                     </ul>
