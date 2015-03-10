@@ -152,4 +152,36 @@ body {
     margin-right: 5px;
     margin-left: 10px;
 }
-
+.category-list{
+	border-right:solid 1px #ccc;
+	}
+.category-list h3{
+	text-align:center;
+	border-bottom:solid 1px #ccc;
+	padding-bottom:10px;
+	}
+.sub-cat{
+	width:100% !important;
+	}
+.sub-cat li{
+	width:100% !important;
+	text-align:center;
+	border-left:none !important;
+	border-bottom:dotted 1px #ccc;
+	
+	
+	}
+.sub-cat li:last-child{
+	border-bottom:none;
+	}
+.sub-cat li:hover{
+	background-color:#DD1A21;
+	color:black;
+	}
+.sub-cat li:hover a{
+	color:white;
+	}
+.sub-cat li a{
+	font-size:16px !important;
+	font-family:koodak;
+}

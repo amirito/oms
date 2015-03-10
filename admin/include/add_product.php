@@ -68,6 +68,8 @@ if(isset($_POST['submit'])){
               	    <option value="n">جنس محصول را انتخاب کنید</option>
               	    <option value="1">استیل</option>
               	    <option value="2">سرامیک</option>
+                    <option value="3">کتری قوری</option>
+                    <option value="4">گرانیت</option>
              	   </select>
           		  </div>
             </div>

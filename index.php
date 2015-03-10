@@ -1,5 +1,9 @@
 <?php require_once('admin/core/core.php'); ?>
-
+<?php
+	
+	
+	
+?>
 
 <!doctype html>
 <html class="no-js" lang="en-US">
@@ -53,11 +57,61 @@
                         </li>
                         <li id="menu-item-1635" class="two-column dropleft menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1635 pull-right <?php if((isset($_GET['page']) && $_GET['page']=='products')) {echo 'active';}?>" dir="rtl">
                             <a href="#">محصولات <span class="caret"></span></a>
-                                <ul role="menu" class=" dropdown-menu">
-                                    <li id="menu-item-223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223">
+                                <ul role="menu" class=" dropdown-menu" dir="rtl">
+                                	<div class="col-sm-3 category-list pull-right">
+                                    	<h3>استیل</h3>
+                                        <ul class="sub-cat">
+                                        	
+											<li><a href="?page=products&id=6">سرویس قابلمه</a></li>
+                                            <li><a href="?page=products&id=8">قابلمه تک</a></li>
+                                            <li><a href="?page=products&id=11">قابلمه بخارپز</a></li>
+                                            <li><a href="?page=products&id=12">قابلمه اسپاگتی</a></li>
+                                            <li><a href="?page=products&id=16">قاشق چنگال</a></li>
+                                            <li><a href="?page=products&id=13">تابه تک</a></li>
+                                            <li><a href="?page=products&id=14">قهوه جوش</a></li>
+                                            <li><a href="?page=products&id=15">زودپز</a></li>
+										
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-3 category-list pull-right">
+                                    	<h3>سرامیک</h3>
+                                        <ul class="sub-cat">
+                                        	
+											<li><a href="?page=products&id=1">سرویس قابلمه</a></li>
+                                            <li><a href="?page=products&id=2">قابلمه تک</a></li>
+                                            <li><a href="?page=products&id=3">تابه تک</a></li>
+                                            <li><a href="?page=products&id=4">تابه وگ</a></li>
+                                            <li><a href="?page=products&id=5">تابه گریل</a></li>
+													
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-3 category-list pull-right">
+                                    	<h3>کتری قوری</h3>
+                                        <ul class="sub-cat">
+                                        	<li><a href="?page=products&id=22">کتری قوری لوله ای</a></li>
+                                            <li><a href="?page=products&id=23">کتری قوری شیردار</a></li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-3 category-list pull-right">
+                                    	<h3>گرانیت</h3>
+                                        <ul class="sub-cat">
+                                        	<li><a href="?page=products&id=17">سرویس قابلمه</a></li>
+                                            <li><a href="?page=products&id=18">قابلمه تک</a></li>
+                                            <li><a href="?page=products&id=19">تابه تک</a></li>
+                                            <li><a href="?page=products&id=20">تابه وگ</a></li>
+                                            <li><a href="?page=products&id=21">تابه گریل</a></li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <!--<li id="menu-item-223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223">
                                         <a href="?page=products&catid=1">استیل</a></li>
                                     <li id="menu-item-224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-224">
                                         <a href="?page=products&catid=2">سرامیک</a></li>
+                                        <li id="menu-item-224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-224">
+                                        <a href="?page=products&catid=3">گرانیت</a></li>
+                                        <li id="menu-item-224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-224">
+                                        <a href="?page=products&catid=4">قوری کتری</a></li>-->
                                     
                                 </ul>
                          </li>

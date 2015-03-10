@@ -240,7 +240,7 @@ ul.dropdown-menu > li > .dropdown-menu li > .dropdown-menu > li > .dropdown-menu
   }
   .menu_container li.drop-left ul.dropdown-menu,
   .menu_container li.dropleft ul.dropdown-menu {
-    right: 0;
+    right: -150px;
   }
   .menu_container li.drop-right ul.dropdown-menu {
     left: 0;
@@ -299,38 +299,39 @@ ul.dropdown-menu > li > .dropdown-menu li > .dropdown-menu > li > .dropdown-menu
   li.two_column.has-dropdown ul,
   li.two-column.has-dropdown ul {
     overflow: hidden;
-    width: 550px;
+    width: 700px;
     padding: 20px 10px;
   }
   li.two_column.has-dropdown ul li,
   li.two-column.has-dropdown ul li {
     float: left;
-    width: 50%;
-    border-right: solid 1px #ccc;
+    width: 25%;
+    border-left: solid 1px #ccc;
+	text-align:center;
   }
   li.two_column.has-dropdown ul li:nth-child(even),
   li.two-column.has-dropdown ul li:nth-child(even) {
-    border-right: solid 0px red;
+    /*border-right: solid 0px red;*/
   }
   li.two_column.has-dropdown ul li:nth-child(odd),
   li.two-column.has-dropdown ul li:nth-child(odd) {
-    clear: left;
+    /*clear: left;*/
   }
   li.two_column.has-dropdown ul li:first-child,
   li.two-column.has-dropdown ul li:first-child {
-    padding: 10px 0 0 0;
+    /*padding: 10px 0 0 0;*/
   }
   li.two_column.has-dropdown ul li:nth-child(2),
   li.two-column.has-dropdown ul li:nth-child(2) {
-    padding: 10px 0 0 0;
+    /*padding: 10px 0 0 0;*/
   }
   li.two_column.has-dropdown ul li:nth-last-child(2),
   li.two-column.has-dropdown ul li:nth-last-child(2) {
-    padding: 0 0 10px 0;
+    /*padding: 0 0 10px 0;*/
   }
   li.two_column.has-dropdown ul li:last-child,
   li.two-column.has-dropdown ul li:last-child {
-    padding: 0px 0 10px 0;
+    /*padding: 0px 0 10px 0;*/
   }
   li.two_column.has-dropdown ul li a,
   li.two-column.has-dropdown ul li a {

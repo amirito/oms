@@ -1,34 +1,32 @@
 <?php 
 
-	$sub_cat_query = "SELECT DISTINCT (sub_name) , sub_category.id,products.cat_id
-							FROM `products` INNER JOIN  `sub_category` ON products.sub_cat_id = sub_category.id
-							WHERE products.cat_id = $_GET[catid] ";
-	$sub_cat_result = mysqli_query($connection,$sub_cat_query);
 	
+	$sub_query = "SELECT * FROM `sub_category` WHERE cat_id = $_GET[id]";
+	$sub_result = mysqli_query($connection , $sub_query) ;
+	$sub_row = mysqli_fetch_assoc($sub_result);
 	
-	$product_query = "SELECT products.id AS product_id , products.product_name , products.sub_cat_id , products.product_image , products.cat_id , products.sub_cat_id ,
-						sub_category.id , sub_category.sub_name 
-						FROM `products` INNER JOIN  `sub_category` ON products.sub_cat_id = sub_category.id
-						WHERE products.cat_id = $_GET[catid] ";
+	$product_query = "SELECT * FROM products WHERE sub_cat_id = $_GET[id] ";
 	$product_result = mysqli_query($connection,$product_query);	
-	if($_GET['catid']==1){
-		$cat = 'استیل';
-		}else {
-			$cat = 'سرامیک';
-			}
+	
 	
 ?>
 
-<div class="full_page_photo" style="background-image: url(images/product<?php echo $_GET['catid']; ?>.jpg)">
+<div class="full_page_photo no_photo">
      <div class="hgroup">
       <div class="hgroup_title animated bounceInUp">
    <div class="container">
-     <h1 dir="rtl" style="font-family:koodak,broadway">محصولات <strong><?php echo $cat ; ?></strong></h1>
+     <h1>
+	 	محصولات
+     </h1>
    </div>
 </div>
 <div class="hgroup_subtitle animated bounceInUp skincolored">
    <div class="container">
-     <p class="broadway" style="font-size:24px;">O.M.S.</p>
+     <p>
+	 <?php
+	 	echo $sub_row['sub_name'];
+	 ?>
+     </p>
    </div>
 </div>
      </div>
@@ -44,14 +42,7 @@
 
 <section id=""  class="light"> <div class="container">  <div class="row"><div class="col-md-12  text-default" >
 <div class="portfolio_strict">
-     <ul class="portfolio_filters" id="filt_3021" dir="rtl">
-          <li><a href="#" data-filter="*">همه محصولات</a></li>
-<?php
-  while($sub_cat_row = mysqli_fetch_assoc($sub_cat_result)){
-	  echo '<li><a href="#" data-filter=".sub_cat'.$sub_cat_row['id'].'">'.$sub_cat_row['sub_name'].'</a></li>';
-	  }
- ?>
-     </ul>
+     
 <div class="row isotope_portfolio_container" id="cont_3021">
 <?php
 
@@ -59,7 +50,7 @@
 		echo '
 		<div class="sub_cat'.$product_row['sub_cat_id'].' col-xs-12 col-sm-6 col-md-3">
 			 <div class="portfolio_item">
-			   <a href="?page=productdetail&id='.$product_row['product_id'].'">
+			   <a href="?page=productdetail&id='.$product_row['id'].'">
 				  <figure style="background-image:url(images/products/'.$product_row['product_image'].')">
 					   <figcaption>
 						 <div class="portfolio_description">
