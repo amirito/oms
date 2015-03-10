@@ -1,9 +1,4 @@
 <?php require_once('admin/core/core.php'); ?>
-<?php
-	
-	
-	
-?>
 
 <!doctype html>
 <html class="no-js" lang="en-US">

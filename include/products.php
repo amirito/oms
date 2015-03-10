@@ -1,7 +1,7 @@
 <?php 
 
 	
-	$sub_query = "SELECT * FROM `sub_category` WHERE cat_id = $_GET[id]";
+	$sub_query = "SELECT * FROM `sub_category` WHERE id = $_GET[id]";
 	$sub_result = mysqli_query($connection , $sub_query) ;
 	$sub_row = mysqli_fetch_assoc($sub_result);
 	
