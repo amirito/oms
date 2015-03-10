@@ -1,14 +1,18 @@
 <?php
-	session_start();
+require_once('core/core.php');
+	
 	$error = '';
 	if(isset($_POST['signin'])){
+		
 		$user = $_POST['user'];
 		$password = $_POST['password'];
-		if($user == 'admin' && $password == 'omsco.ir'){
-			$_SESSION['admin']='admin';
+		$admin_query = "SELECT * FROM `admin` WHERE `user_name`='$user' AND `password`=SHA1('$password')";
+		$admin_result = mysqli_query($connection , $admin_query);
+		$admin_row = mysqli_fetch_assoc($admin_result);
+		if($admin_row){
+			$_SESSION['OMS_ADMIN']=$admin_row['id'];
 			header('Location: index.php');
-			}
-			else{
+		}else{
 				$error = '<div class="alert alert-danger alert-dismissible" role="alert" dir="rtl">
   <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
   <strong>اخطار!</strong> نام کاربری یا کلمه عبور اشتباه است.

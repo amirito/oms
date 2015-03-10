@@ -5,7 +5,7 @@
 	$query = "SELECT * FROM `products` WHERE `id` = '$_GET[id]' ";
 	$result = mysqli_query($connection,$query);
 	$row = mysqli_fetch_assoc($result);
-	var_dump($row);
+	
 	
 	if(isset($_POST['edit'])){
 	$product_name = $_POST['product_name'];

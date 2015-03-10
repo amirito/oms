@@ -1,6 +1,6 @@
 <?php require_once('core/core.php'); ?>
 <?php 
-	if(!isset($_SESSION['admin'])){
+	if(!isset($_SESSION['OMS_ADMIN'])){
 		header('location: signin.php');
 		
 		}
@@ -46,7 +46,7 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right" style="float:left !important">
           	<li><a href="logout.php">خروج</a></li>      
-            <li><a href="#">تنظیمات</a></li>
+            <li><a href="?page=settings">تنظیمات</a></li>
            
             
           </ul>
