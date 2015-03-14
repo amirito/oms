@@ -87,7 +87,7 @@
 
 <section class="portfolio_teasers_wrapper">
      <div class="container">
-          <h2 class="elegant centered section_header">Related Projects<small></small></h2>
+          <h2 class="elegant centered section_header">محصولات مشابه<small></small></h2>
           <div class="portfolio_strict row">
           
           <?php
